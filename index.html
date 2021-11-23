@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	<title>Wikipedia Example 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<div class="main_display">
+		<img src="images/main_image.jpeg" class="main_image">
+		<h2>NYT Bestselling Book</h2>
+		<p id="instruction">Click the "Search" Button or hit "Enter" to Find the Most Popular Book at a Specified Date (after 2008-06-01).</p>
+		<input id="searchBox" type="text" placeholder="Enter a date in the format of XXXX-XX-XX (Example: 2014-05-09)"></input>
+		<button class="searchButton" id="search">Search</button>
+		<div id="result_container">
+			<div id="results">
+				<div id="left">
+					<div id="book_image"></div>
+					<div id="book_title"></div>
+				</div>
+				<div id="right">
+					<div id="book_description"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+	(function() {
+		window.onload = () => {
+			app.initialize();
+		}
+	})();
+	</script>
+</body>
+</html>
